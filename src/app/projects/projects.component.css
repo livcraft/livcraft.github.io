@@ -17,13 +17,12 @@
   }
 
   h1 {
-      font-size: 32pt;
-      letter-spacing: 20px;
+      font-size: 48px;
+      letter-spacing: 28px;
   }
 
   p {
     margin: 0;
-    font-size: 14pt;
   }
 
   .spacer {
@@ -125,8 +124,8 @@
   }
 
   .card.highlight-card {
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
+    background-color: #aa967c;
+    color: white;
     font-weight: 600;
     border: none;
     width: auto;
@@ -262,8 +261,8 @@
     width: 1920px;
   }
 
-  /* Responsive Styles */
-  @media screen and (max-width: 767px) {
+/* Responsive Styles */
+@media screen and (max-width: 767px) {
     .card-container > *:not(.circle-link) ,
     .terminal {
       width: 100%;
