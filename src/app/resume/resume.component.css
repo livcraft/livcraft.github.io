@@ -14,15 +14,24 @@
   h5,
   h6 {
     margin: 8px 0;
+    padding: 5px;
   }
 
   h1 {
       font-size: 48px;
-      letter-spacing: 28px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 16px;
   }
 
   p {
     margin: 0;
+    padding-bottom: 1%;
   }
 
   .spacer {
@@ -61,7 +70,7 @@
     padding: 0 16px;
     max-width: 960px;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
   }
 
   svg.material-icons {
