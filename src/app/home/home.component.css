@@ -21,9 +21,14 @@
       letter-spacing: 10px;
   }
 
+  h5 {
+    color: white;
+    font-size: 12pt;
+  }
+
   p {
     margin: 0;
-    font-size: 16pt;
+    font-size: 14pt;
   }
 
   ul {
@@ -31,7 +36,8 @@
   }
 
   li {
-    font-size: 16pt;
+    font-size: 12pt;
+    color: white;
   }
 
   .spacer {
@@ -46,7 +52,7 @@
     height: 60px;
     display: flex;
     align-items: center;
-    background-color: rgb(119, 207, 119);
+    background-color: rgb(182, 182, 182);
     color: white;
     font-weight: 600;
   }
