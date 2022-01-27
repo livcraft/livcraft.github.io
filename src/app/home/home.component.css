@@ -17,8 +17,9 @@
   }
 
   h1 {
-      font-size: 32pt;
+      font-size: 75pt;
       letter-spacing: 10px;
+      font-style: italic;
   }
 
   h5 {
@@ -40,43 +41,115 @@
     color: white;
   }
 
-  .spacer {
-    flex: 1;
-  }
-
-  .toolbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
+  section {
+    position: relative;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    background-color: rgb(182, 182, 182);
-    color: white;
-    font-weight: 600;
+    min-height: 400px;
+    padding: 100px 20vw;
+    margin: -1%;
   }
 
-  .toolbar img {
-    margin: 0 16px;
+  .gg {
+    background: rgb(105, 103, 103);
   }
 
-  .toolbar #linkedin-logo {
+  .lg {
+    background: rgb(146, 194, 154);
+  }
+
+  .mg {
+    background: rgb(92, 177, 117);
+  }
+
+  .dg {
+    background: rgb(49, 102, 62);
+  }
+
+  .ggwave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.ggwave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 159px;
+}
+
+.ggwave .shape-fill {
+    fill: #92C29A;
+}
+
+.custom-shape-divider-bottom-1643244701 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1643244701 svg {
+  position: relative;
+  display: block;
+  width: calc(138% + 1.3px);
+  height: 63px;
+}
+
+.custom-shape-divider-bottom-1643244701 .shape-fill {
+  fill: #5CB175;
+}
+
+.custom-shape-divider-bottom-1643244924 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1643244924 svg {
+  position: relative;
+  display: block;
+  width: calc(269% + 1.3px);
+  height: 119px;
+}
+
+.custom-shape-divider-bottom-1643244924 .shape-fill {
+  fill: #31663E;
+}
+
+  .spacer {
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  #linkedin-logo {
     height: 40px;
     margin: 0 16px;
   }
 
-  .toolbar #linkedin-logo:hover {
+  #linkedin-logo:hover {
     opacity: 0.8;
   }
 
   .content {
     display: flex;
-    margin: 82px auto 32px;
-    padding: 0 16px;
-    max-width: 960px;
     flex-direction: column;
-    /* align-items: center; */
   }
 
   svg.material-icons {
@@ -101,11 +174,11 @@
 
   .card {
     all: unset;
-    border-radius: 2px;
+    /* border-radius: 2px;
     border: 1px solid #eee;
-    background-color: #fafafa;
-    height: 40px;
-    width: 150px;
+    background-color: #fafafa; */
+    /* height: 40px;
+    width: 150px; */
     margin: 0 8px 16px;
     padding: 16px;
     display: flex;
@@ -118,11 +191,6 @@
 
   .card-container .card:not(:last-child) {
     margin-right: 0;
-  }
-
-  .card.card-small {
-    height: 16px;
-    width: 168px;
   }
 
   .card-container .card:not(.highlight-card) {
@@ -150,21 +218,6 @@
 
   .card.card.highlight-card span {
     margin-left: 60px;
-  }
-
-  svg#rocket {
-    width: 80px;
-    position: absolute;
-    left: -10px;
-    top: -24px;
-  }
-
-  svg#rocket-smoke {
-    height: calc(100vh - 95px);
-    position: absolute;
-    top: 10px;
-    right: 180px;
-    z-index: -10;
   }
 
   a,
@@ -211,26 +264,6 @@
     margin: 0;
   }
 
-  .circle-link {
-    height: 40px;
-    width: 40px;
-    border-radius: 40px;
-    margin: 8px;
-    background-color: white;
-    border: 1px solid #eeeeee;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    transition: 1s ease-out;
-  }
-
-  .circle-link:hover {
-    transform: translateY(-0.25rem);
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-  }
-
   footer {
     margin-top: 8px;
     display: flex;
@@ -241,39 +274,6 @@
   footer a {
     display: flex;
     align-items: center;
-  }
-
-  .github-star-badge {
-    color: #24292e;
-    display: flex;
-    align-items: center;
-    font-size: 12px;
-    padding: 3px 10px;
-    border: 1px solid rgba(27,31,35,.2);
-    border-radius: 3px;
-    background-image: linear-gradient(-180deg,#fafbfc,#eff3f6 90%);
-    margin-left: 4px;
-    font-weight: 600;
-  }
-
-  .github-star-badge:hover {
-    background-image: linear-gradient(-180deg,#f0f3f6,#e6ebf1 90%);
-    border-color: rgba(27,31,35,.35);
-    background-position: -.5em;
-  }
-
-  .github-star-badge .material-icons {
-    height: 16px;
-    width: 16px;
-    margin-right: 4px;
-  }
-
-  svg#clouds {
-    position: fixed;
-    bottom: -160px;
-    left: -230px;
-    z-index: -10;
-    width: 1920px;
   }
 
   /* Responsive Styles */
