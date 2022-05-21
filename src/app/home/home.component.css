@@ -107,6 +107,8 @@
   }
 
   footer {
-    margin-top: 3%;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
     line-height: 20px;
   }
