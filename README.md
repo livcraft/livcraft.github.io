@@ -1,3 +1,4 @@
-# My Webpage
+# hello
+just an eecs person's website
 
-Built with Angular
+built with angular
