@@ -67,6 +67,7 @@
     align-items: center;
     transition: all 0.2s ease-in-out;
     padding-inline: 2%;
+    min-height: 400px;
   }
 
   a,
