@@ -21,7 +21,9 @@
     "ng2-pdf-viewer": "^7.0.2",
     "rxjs": "~7.4.0",
     "three": "^0.137.5",
+    "tilt.js": "^1.2.1",
     "tslib": "^2.3.0",
+    "vanilla-tilt": "^1.7.2",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
@@ -29,6 +31,7 @@
     "@angular/cli": "~13.0.3",
     "@angular/compiler-cli": "~13.0.0",
     "@types/jasmine": "~3.10.0",
+    "@types/jquery": "^3.5.14",
     "@types/node": "^12.11.1",
     "@types/three": "^0.137.0",
     "jasmine-core": "~3.10.0",
