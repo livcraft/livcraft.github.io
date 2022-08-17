@@ -6,17 +6,7 @@
 
   .mainpage,
   #mainpage {
-    display: none;
-  }
-
-  canvas {
-    width: auto;
-    height: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    z-index: 1;
+    display: block;
   }
 
   main {
@@ -61,20 +51,8 @@
     background-color: rgba(225, 226, 236, 0.39);
   }
 
-  #navbar {
-    margin-top: 120px;
-    padding: 1%;
-    overflow: hidden;
-    position: absolute;
-    width: 100%;
-
-  }
-
-  #navbar a {
-    padding-right: 2%;
-    text-align: center;
-    font-weight: bold;
-    font-size: 20px;
+  svg {
+    padding-right: 10px;
   }
 
   h1 {
@@ -82,6 +60,9 @@
       font-size: 75pt;
       letter-spacing: 10px;
       font-style: italic;
+
+      position: relative;
+      z-index: -1;
 
       background: -webkit-radial-gradient(rgb(0, 0, 0), rgb(115, 115, 115));
       -webkit-background-clip: text;
@@ -143,17 +124,6 @@
     padding-top: 5%;
     padding-bottom: 5%;
 
-    border: thick solid;
-    border-width: 50px;
-
-  }
-
-  .midp {
-    border-color: rgb(159, 159, 159);
-  }
-
-  .midb {
-    border-color: rgb(106, 106, 106);
   }
 
   .card-container img {
